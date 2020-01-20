@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement style="flex-grow: 1;">
+        <Style src="PoissonInspector.uss" />
+        <uie:PropertyField name="minRadius" binding-path="minRadius" label="Minimum Point Radius" />
+        <uie:PropertyField name="maxRadius" binding-path="maxRadius" label="Maximum Point Radius" />
+        <uie:PropertyField name="size" binding-path="size" label="Area" />
+        <uie:PropertyField name="density" view-data-key="density" binding-path="density" label="Point Density" />
+        <uie:PropertyField name="max-points" binding-path="maxPoints" label="Maximum Points (Safety)" />
+        <uie:PropertyField name="prefab" binding-path="prefab" label="Prefab to Spawn" />
+        <uie:PropertyField name="image" binding-path="image" label="Image Influence" />
+        <ui:Button text="Generate Points" name="sample" binding-path="sample-points" />
+        <ui:Button text="Clear Points" name="clear" binding-path="clear-points" />
+    </ui:VisualElement>
+</ui:UXML>
